@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+echo "=========== setting env variables ==========="
+environment=$1
+
+echo "=========== mina deploy =============="
+time bundle exec mina $environment ssh_keyscan_domain
+time bundle exec mina $environment setup
+time bundle exec mina $environment deploy
