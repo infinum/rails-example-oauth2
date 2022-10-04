@@ -1,0 +1,13 @@
+<h1> Hi! </h1>
+
+
+<%= button_to 'Login with AWS', '/auth/aws' %>
+<%= button_to 'Login with Azure', '/auth/azure' %>
+
+<% if session[:auth] %>
+  <pre>
+    <%= JSON.pretty_generate(session[:auth])%>
+
+  </pre>
+  <%= button_to 'Logout', 'auth/aws/logout' %>
+<% end %>
