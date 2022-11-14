@@ -19,7 +19,7 @@
     "@infinumrails/eslint-config-js": "^0.1.0",
     "@infinumrails/stylelint-config-scss": "^0.1.0",
     "eslint": "^8.24.0",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.19",
     "stylelint": "^14.13.0"
   }
 }
